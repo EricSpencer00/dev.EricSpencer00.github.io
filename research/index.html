@@ -5,7 +5,7 @@
 <title>TLA+ &amp; LLM Research Publications | Eric Spencer</title>
 <meta name="description" content="Papers, models, datasets, and tools from Eric Spencer&#x27;s research on TLA+ formal methods and large language models.">
 <meta name="author" content="Eric Spencer">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://ericspencer.us/research/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -62,30 +62,79 @@
       "@type": "ItemList",
       "@id": "https://ericspencer.us/research/#publications",
       "name": "Research publications",
-      "numberOfItems": 3,
+      "numberOfItems": 4,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "https://ericspencer.us/research/#tla-bench"
+            "@id": "https://ericspencer.us/research/#dirty-set"
           }
         },
         {
           "@type": "ListItem",
           "position": 2,
           "item": {
-            "@id": "https://ericspencer.us/research/#chattla-gpt-oss-paper"
+            "@id": "https://ericspencer.us/research/#tla-bench"
           }
         },
         {
           "@type": "ListItem",
           "position": 3,
           "item": {
+            "@id": "https://ericspencer.us/research/#chattla-gpt-oss-paper"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
             "@id": "https://ericspencer.us/research/#eric-paper"
           }
         }
       ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://ericspencer.us/research/#dirty-set",
+      "headline": "How the Dirty Set Moves: Characterizing Schedule Reuse in Incremental Sparse Matrix Multiplication",
+      "name": "How the Dirty Set Moves: Characterizing Schedule Reuse in Incremental Sparse Matrix Multiplication",
+      "url": "https://ericspencer.us/research/#dirty-set",
+      "sameAs": [
+        "https://arxiv.org/abs/2610.19489",
+        "https://doi.org/10.48550/arXiv.2610.19489"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.48550/arXiv.2610.19489"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hunter Horne"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ericspencer.us/#eric",
+          "name": "Eric Spencer"
+        },
+        {
+          "@type": "Person",
+          "name": "Alex Henningfield"
+        },
+        {
+          "@type": "Person",
+          "name": "Arslan Bisharat"
+        }
+      ],
+      "datePublished": "2026-10-14",
+      "description": "In incremental sparse matrix multiplication, only a few input rows change per step, and we call those rows the dirty set. A direct column-wise incremental update beats a tiled executor that keeps its preparation and cached schedules in 779 of 837 workloads, and it is 2.1-8.2x faster than the best of eight full-recomputation codes. Tiling only pays off when tiles merge many entries into each output write.",
+      "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "arXiv preprint, arXiv:2610.19489"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "ScholarlyArticle",
